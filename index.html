@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jobs</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Saira:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Cdn font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        @media (max-width:767px){
+            #header-carousel .carousel-inner{
+                height: 100vh !important;
+            }
+            #header-carousel .carousel-inner img{
+                height: 100vh !important;
+            }
+            #header-carousel .carousel-item{
+                height: 100vh !important;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex" dir="ltr">
+            <div class="col-lg-6 px-5 text-start">
+                <small><i class="fa fa-map-marker-alt me-2"></i>123 Street, New York, USA</small>
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i>info@example.com</small>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>تابعنا :</small>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-twitter"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="text-white-50 ms-3" href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+            <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+                <h1 class="fw-bold text-primary m-0">إعمل <span class="text-white"> الأن</span></h1>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
+                data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="index.html" class="nav-item nav-link active">الصفحة الرئيسية</a>
+                    <a href="about.html" class="nav-item nav-link">عنى</a>
+                    <a href="causes.html" class="nav-item nav-link">الوظائف</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"> الصفحات</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="service.html" class="dropdown-item">الخدمات</a>
+                            <a href="team.html" class="dropdown-item">فريقنا</a>
+                            <a href="testimonial.html" class="dropdown-item">إستطلاع الأراء</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">تواصل معنا</a>
+                </div>
+                <div class="d-none d-lg-flex ms-2">
+                    <a class="btn btn-outline-primary py-2 px-3" href="causes.html">
+                        إعمل الأن
+                        <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                            <i class="fa fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">هيا جد و ظيفتك المناسبة
+                                        الأن مذا تنتظر!</h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">موقع إلكتروني مجاني يربط بين
+                                        الباحثين عن عمل وأصحاب العمل. يقدم الموقع مجموعة واسعة من الوظائف في مختلف
+                                        المجالات، مع إمكانية البحث عن وظائف حسب الموقع والمجال والمهارات.</p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="causes.html">
+                                        جد وظيفتك!
+                                        <div
+                                            class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" style="height: 110vh;" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-7 pt-5">
+                                    <h1 class="display-4 text-white mb-3 animated slideInDown">كل الوضائف أصبحت قريبة
+                                        منك الأن هيا نحصقق حلمك</h1>
+                                    <p class="fs-5 text-white-50 mb-5 animated slideInDown">موقع إلكتروني مجاني يربط بين
+                                        الباحثين عن عمل وأصحاب العمل. يقدم الموقع مجموعة واسعة من الوظائف في مختلف
+                                        المجالات، مع إمكانية البحث عن وظائف حسب الموقع والمجال والمهارات.</p>
+                                    <a class="btn btn-primary py-2 px-3 animated slideInDown" href="causes.html">
+                                        جد وظيفتك!
+                                        <div
+                                            class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                            <i class="fa fa-arrow-right"></i>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative overflow-hidden h-100" style="min-height: 400px;">
+                        <img class="position-absolute w-100 h-100 pt-5 pe-5" src="img/about-1.jpg" alt=""
+                            style="object-fit: cover;">
+                        <img class="position-absolute top-0 end-0 bg-white ps-2 pb-2" src="img/about-2.jpg" alt=""
+                            style="width: 200px; height: 200px;">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">عنى</div>
+                        <h1 class="display-6 mb-5">موقع إيجاد الوظائف: نساعدك على تحقيق طموحاتك المهنية</h1>
+                        <div class="bg-light border-bottom border-5 border-primary rounded p-4 mb-4">
+                            <p class="text-dark mb-2">نؤمن في موقع إيجاد الوظائف بأن لكل شخص الحق في العثور على عمل
+                                مُرضٍ يُحقق طموحاته المهنية. لذلك، نسعى جاهدين لتقديم منصة مجانية وسهلة الاستخدام
+                                تربط
+                                بين الباحثين عن عمل وأصحاب العمل.</p>
+                            <span class="text-primary">إعمل الأن</span>
+                        </div>
+                        <p class="mb-5">منصة شاملة تربط بين الباحثين عن عمل وأصحاب العمل، تُقدم لك وظائف تناسب مهاراتك
+                            وخبراتك، وتُساعدك على تحقيق أهدافك المهنية.</p>
+                        <a class="btn btn-primary py-2 px-3 me-3" href="causes.html">
+                            جد عملك المناسب!
+                            <div class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                        <a class="btn btn-outline-primary py-2 px-3" href="contact.html">
+                            تواصل معنا
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Causes Start -->
+    <div class="container-xxl bg-light my-5 py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">قصم الوضائف</div>
+                <h1 class="display-6 mb-5">كل الوضائف المتوفرة حالياً يمكنك اختيار ما يناسبك</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div
+                        class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>خدمة العملاء</small>
+                            </div>
+                            <h5 class="mb-3">مختصون في خدمة العملاء: مجال خدمة العملاء.</h5>
+                            <p>يُعدّ توفير خدمة عملاء ممتازة أمرًا ضروريًا لنجاح أي شركة، لذلك يزداد الطلب على مختصين في
+                                هذا المجال.</p>
+                            <div class="causes-progress bg-light p-3 pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-dark">$10,000 <small class="text-body">الأعلى</small></p>
+                                    <p class="text-dark">$9,542 <small class="text-body">المتوسط</small></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/courses-1.jpg" alt="">
+                            <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="https://smrturl.co/4d23e2a">
+                                    قدم الأن
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div
+                        class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>التسويق الرقمي</small>
+                            </div>
+                            <h5 class="mb-3">مختصون في التسويق الرقمي: مجال التسويق.</h5>
+                            <p>مع ازدياد أهمية التسويق الرقمي، يزداد الطلب على مختصين في هذا المجال.</p>
+                            <div class="causes-progress bg-light p-3 pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-dark">$10,000 <small class="text-body">الأعلى</small></p>
+                                    <p class="text-dark">$9,542 <small class="text-body">المتوسط</small></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/courses-2.jpg" alt="">
+                            <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="https://smrturl.co/179775f">
+                                    قدم الأن
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div
+                        class="causes-item d-flex flex-column bg-white border-top border-5 border-primary rounded-top overflow-hidden h-100">
+                        <div class="text-center p-4 pt-0">
+                            <div class="d-inline-block bg-primary text-white rounded-bottom fs-5 pb-1 px-3 mb-4">
+                                <small>البرمجيات</small>
+                            </div>
+                            <h5 class="mb-3">مهندسو البرمجيات: مجال تكنولوجيا المعلومات.</h5>
+                            <p>مهندسو البرمجيات: يزداد الطلب على مهندسي البرمجيات بشكل كبير مع ازدياد اعتماد الشركات على
+                                التكنولوجيا.</p>
+                            <div class="causes-progress bg-light p-3 pt-2">
+                                <div class="d-flex justify-content-between">
+                                    <p class="text-dark">$10,000 <small class="text-body">الأعلى</small></p>
+                                    <p class="text-dark">$9,542 <small class="text-body">المتوسط</small></p>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                        aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="position-relative mt-auto">
+                            <img class="img-fluid" src="img/courses-3.jpg" alt="">
+                            <div class="causes-overlay">
+                                <a class="btn btn-outline-primary" href="https://smrturl.co/3d087cb">
+                                    قدم الأن
+                                    <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Causes End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">ماذا نفعل!</div>
+                <h1 class="display-6 mb-5">ندعم طموحاتك المهنية</h1>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <i class="fa-regular fa-file" style="font-size: 90px;color: #FF6F0F;padding-bottom: 12px;"></i>
+                        <h4 class="mb-3">إنشاء سيرة ذاتية</h4>
+                        <p class="mb-4">يقدم الموقع أيضًا نصائح حول كتابة سيرة ذاتية قوية تجذب انتباه أصحاب العمل.</p>
+                        <a class="btn btn-outline-primary px-3" href="causes.html">
+                            إعمل الأن
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <i class="fa-solid fa-briefcase"
+                            style="font-size: 90px;color: #FF6F0F;padding-bottom: 12px;"></i>
+                        <h4 class="mb-3">التقدم للوظائف</h4>
+                        <p class="mb-4">يسمح الموقع للمستخدمين بالتقدم للوظائف مباشرة من خلال الموقع.</p>
+                        <a class="btn btn-outline-primary px-3" href="causes.html">
+                            إعمل الأن
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item bg-white text-center h-100 p-4 p-xl-5">
+                        <i class="fa-solid fa-laptop-file"
+                            style="font-size: 90px;color: #FF6F0F;padding-bottom: 12px;"></i>
+                        <h4 class="mb-3">البحث عن وظائف</h4>
+                        <p class="mb-4">يوفر الموقع محرك بحث متقدم للوظائف، يسمح للباحثين عن عمل بالبحث عن وظائف حسب
+                            المجال.</p>
+                        <a class="btn btn-outline-primary px-3" href="causes.html">
+                            إعمل الأن
+                            <div class="d-inline-flex btn-sm-square bg-primary text-white rounded-circle ms-2">
+                                <i class="fa fa-arrow-right"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Donate Start -->
+    <div class="container-fluid donate my-5 py-5" data-parallax="scroll" data-image-src="img/carousel-2.jpg">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">وظيفتك المناسبة
+                    </div>
+                    <h1 class="display-6 text-white mb-5">شكرا على النتائج التي تحققت معك</h1>
+                    <p class="text-white-50 mb-0">املئ الحقول المقدمة لك و ختر اجر الساعة الذي ترغب به، مع ضمان حصولك
+                        على أجر عادل التواصل مع أصحاب العمل مباشرة من خلال منصتنا.</p>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100 bg-white p-5">
+                        <form dir="rtl">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control bg-light border-0" id="name"
+                                            placeholder="الإسم الكامل">
+                                        <label for="name">الإسم الكامل</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="email" class="form-control bg-light border-0" id="email"
+                                            placeholder="البريد الإلكتروني">
+                                        <label for="email">البريد الإلكتروني</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="btn-group d-flex justify-content-around">
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" checked>
+                                        <label class="btn btn-light py-3" for="btnradio1">$10</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2">
+                                        <label class="btn btn-light py-3" for="btnradio2">$20</label>
+
+                                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3">
+                                        <label class="btn btn-light py-3" for="btnradio3">$30</label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-primary px-5" style="height: 60px;">
+                                        <a href="causes.html" style="color:white">
+                                            جد وظيفتك الأن!
+                                            <div
+                                                class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
+                                                <i class="fa fa-arrow-right"></i>
+                                            </div>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Donate End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">أعظاء قريقنا</div>
+                <h1 class="display-6 mb-5">دعونا نلتقي بجنودنا العاديين</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>عثمان</h5>
+                            <p class="text-primary">تعيين</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>فاطمة</h5>
+                            <p class="text-primary">تعيين</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>سلمى</h5>
+                            <p class="text-primary">تعيين</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                        <div class="overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                        </div>
+                        <div class="team-text bg-light text-center p-4">
+                            <h5>حاثم</h5>
+                            <p class="text-primary">تعيين</p>
+                            <div class="team-social text-center">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <div class="d-inline-block rounded-pill bg-secondary text-primary py-1 px-3 mb-3">إستطلاعات الأراء</div>
+                <h1 class="display-6 mb-5">موثوق به من قبل الآلاف من الأشخاص والمنظمات غير الربحية</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s" dir="ltr">
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-1.jpg"
+                        style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>الموقع سهل الاستخدام وله واجهة بسيطة، مما يجعل من السهل العثور على الوظائف والتقدم لها.
+                            يقدم الموقع مجموعة واسعة من الوظائف في مختلف المجالات، مما يجعله مناسبًا للباحثين عن عمل من
+                            مختلف الخلفيات.
+                            يسمح الموقع للمستخدمين بتحديد أجر الساعة الذي يرغبون به، مما يضمن حصولهم على أجر عادل.</p>
+                        <h5 class="mb-1">نورة</h5>
+                        <span class="fst-italic">مهنية</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-2.jpg"
+                        style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>الموقع سهل الاستخدام وله واجهة بسيطة، مما يجعل من السهل العثور على الوظائف والتقدم لها.
+                            يقدم الموقع مجموعة واسعة من الوظائف في مختلف المجالات، مما يجعله مناسبًا للباحثين عن عمل من
+                            مختلف الخلفيات.
+                            يسمح الموقع للمستخدمين بتحديد أجر الساعة الذي يرغبون به، مما يضمن حصولهم على أجر عادل.</p>
+                        <h5 class="mb-1">سهيل</h5>
+                        <span class="fst-italic">مهني</span>
+                    </div>
+                </div>
+                <div class="testimonial-item text-center">
+                    <img class="img-fluid bg-light rounded-circle p-2 mx-auto mb-4" src="img/testimonial-3.jpg"
+                        style="width: 100px; height: 100px;">
+                    <div class="testimonial-text rounded text-center p-4">
+                        <p>الموقع سهل الاستخدام وله واجهة بسيطة، مما يجعل من السهل العثور على الوظائف والتقدم لها.
+                            يقدم الموقع مجموعة واسعة من الوظائف في مختلف المجالات، مما يجعله مناسبًا للباحثين عن عمل من
+                            مختلف الخلفيات.
+                            يسمح الموقع للمستخدمين بتحديد أجر الساعة الذي يرغبون به، مما يضمن حصولهم على أجر عادل.</p>
+                        <h5 class="mb-1">نصر</h5>
+                        <span class="fst-italic">مهني</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h1 class="fw-bold text-primary mb-4">إعمل <span class="text-white">الأن</span></h1>
+                    <p>موقع إلكتروني مجاني يربط بين الباحثين عن عمل وأصحاب العمل. يقدم الموقع مجموعة واسعة من الوظائف في
+                        مختلف المجالات، مع إمكانية البحث عن وظائف حسب الموقع والمجال والمهارات.
+                    </p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">العنوان</h5>
+                    <p><i class="fa fa-map-marker-alt me-3"></i> 123 Street, New York, USA</p>
+                    <p><i class="fa fa-phone-alt me-3"></i> +012 345 67890</p>
+                    <p><i class="fa fa-envelope me-3"></i> info@example.com</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">روابط سريعة</h5>
+                    <a class="btn btn-link" href="about.html" dir="ltr" style="text-align: right !important;">عنى</a>
+                    <a class="btn btn-link" href="contact.html" dir="ltr" style="text-align: right !important;">تواصل معنا</a>
+                    <a class="btn btn-link" href="service.html" dir="ltr" style="text-align: right !important;">خدماتنا</a>
+                    <a class="btn btn-link" href="contact.html" dir="ltr" style="text-align: right !important;">الدعم</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">النشرة الإخبارية</h5>
+                    <p>معنا، ستكون على اطلاع دائم على أحدث فرص العمل في مجالك، مما يمنحك ميزة تنافسية في سوق العمل.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;" dir="ltr">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text"
+                            placeholder="البريد الإلكتروني">
+                        <button type="button"
+                            class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">اشترك الأن</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container" style="display: flex; justify-content: center;">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0" style="display: flex; justify-content: center;">
+                    &copy; <a href="#"> إعمل الأن </a>, كل الحقوق محفوظة.
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/parallax/parallax.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
